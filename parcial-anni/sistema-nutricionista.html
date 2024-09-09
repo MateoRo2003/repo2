@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Dieta Nutricional</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <div class="contenedorPrincipal">
+    <header>
+      <h1>Legumbres indispensables para la alimentación</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Propiedades y Beneficios</a></li>
+          <li><a href="receta.html">Receta</a></li>
+          <li><a href="sistema-nutricionista.html">Sistema Nutricional</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <form id="formPersonas">
+        <label for="cantidadPersonas">Cantidad de personas (2 o más):</label>
+        <input type="number" id="cantidadPersonas" min="2" required>
+        <button type="button" id="btnIngresarPersonas">Ingresar Personas</button>
+      </form>
+
+      <form id="formDatosPersonas" class="hidden">
+        <div id="personasContainer"></div>
+        <button type="button" id="btnIngresarPeso">Ingresar Peso</button>
+      </form>
+
+      <form id="formPesoPersonas" class="hidden">
+        <div id="pesoContainer"></div>
+        <button type="button" id="btnCalcular">Calcular Resultados</button>
+      </form>
+
+      <div id="resultados" class="hidden">
+        <h2>Resultados</h2>
+        <p id="totalGarbanzos"></p>
+        <p id="promedioAdelgazamiento"></p>
+        <p id="porcentajeAumento"></p>
+        <p id="personaMayorAdelgazamiento"></p>
+        <button type="button" id="btnReiniciar">Reiniciar</button>
+      </div>
+    </main>
+
+    <footer>
+      <address>
+        <p>Para contactarse con nosotros escribir a <a href="mailto:legumbres@nutricion.com">legumbres@nutricion.com</a></p>
+      </address>
+    </footer>
+  </div>
+
+  <script src="js/sistema-nutricional.js"></script>
+</body>
+</html>
